@@ -91,6 +91,9 @@ def createTree(dataSet, labels):
     :return: 创建完成的决策树
     '''
     classList = [example[-1] for example in dataSet]
+    print('classList[0]', classList[0])
+    print('classList.count(classList[0])', classList.count(classList[0]))
+    print('len(classList)', len(classList))
     if classList.count(classList[0]) == len(classList):
         return classList[0]
     if len(dataSet[0]) == 1:
