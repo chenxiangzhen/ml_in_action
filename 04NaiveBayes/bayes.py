@@ -173,9 +173,7 @@ def testing_naive_bayes():
     # 3. 计算单词是否出现并创建数据矩阵
     train_mat = []
     for post_in in list_post:
-        train_mat.append(
-            set_of_words2vec(vocab_list, post_in)
-        )
+        train_mat.append(set_of_words2vec(vocab_list, post_in))
     # 4. 训练数据
     p0v, p1v, p_abusive = train_naive_bayes(np.array(train_mat), np.array(list_classes))
     # 5. 测试数据
