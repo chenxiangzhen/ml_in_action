@@ -16,6 +16,7 @@ for line in fr.readlines():
 km = KMeans(n_clusters=4) # 初始化
 km.fit(dataMat) # 拟合
 km_pred = km.predict(dataMat) # 预测
+print(km_pred)
 centers = km.cluster_centers_ # 质心
 
 # 可视化结果
